@@ -46,6 +46,13 @@ What's newly live, what faded, what's still live since last brief.
 ### 8. Journal update
 Append today's flagged names to `journal.md`. For names previously flagged that are now hitting T+1d / T+5d / T+30d milestones, log realized returns vs SPY.
 
+### 9. Commit journal back to repo
+After updating `journal.md`, commit the file back to the repository with this exact commit message format:
+```
+market-brief: [YYYY-MM-DD HH:MM ET] run update
+```
+This ensures journal entries persist across future runs. If you cannot commit (permission error), output the full updated `journal.md` content at the end of the brief so it can be manually saved.
+
 ---
 
 ## Output format
